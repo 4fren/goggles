@@ -4,6 +4,12 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
     </head>
     <body class="body">
+        <script>
+            var ip;
+            fetch('https://ipinfo.io?callback')
+              .then(res => res.json())
+              .then(json => console.log(json.ip))
+        </script>    
         <div class="child">
             <div class="k1zIA rSk4se">
                 <style data-iml="1632225007127">

